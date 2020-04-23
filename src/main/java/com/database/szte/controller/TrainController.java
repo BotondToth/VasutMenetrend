@@ -23,7 +23,7 @@ public class TrainController {
     }
 
     @PostMapping("/train")
-    public Train insertNewTraing(@RequestBody final TrainDTO dto) {
+    public Train insertNewTrain(@RequestBody final TrainDTO dto) {
         //TODO: ModelMapper
         return trainService.saveNewTrain(new Train(dto));
     }
