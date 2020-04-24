@@ -1,4 +1,0 @@
-{"name":"Szeged","postCode":{"$numberInt":"6724"}, "station": "Indóház tér"}
-{"name":"Budapest","postCode":{"$numberInt":"1062"}, "station": "Nyugati Vasútállomás"}
-{"name":"Makó","postCode":{"$numberInt":"6900"}, "station": "Makó vasútállomás"}
-{"name":"Kecskemét","postCode":{"$numberInt":"6000"}, "station": "Kecskemét vasútállomás"}

@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5ea2f69a8a9dee47416f1da5"},"postCode":{"$numberInt":"6900"},"name":"Kecskemét vasútállomás","city":"Kecskemét","_class":"com.database.szte.data.Station"}
+{"_id":{"$oid":"5ea2f71c8a9dee47416f1da6"},"postCode":{"$numberInt":"1062"},"name":"Nyugati Vasútállomás","city":"Budapest","_class":"com.database.szte.data.Station"}
+{"_id":{"$oid":"5ea2f7408a9dee47416f1da7"},"postCode":{"$numberInt":"1063"},"name":"Keleti Vasútállomás","city":"Budapest","_class":"com.database.szte.data.Station"}
+{"_id":{"$oid":"5ea2f7748a9dee47416f1da8"},"postCode":{"$numberInt":"6724"},"name":"Szegedi Vasútállomás","city":"Szeged","_class":"com.database.szte.data.Station"}
+{"_id":{"$oid":"5ea2f79c8a9dee47416f1da9"},"postCode":{"$numberInt":"6900"},"name":"Makói Vasútállomás","city":"Makó","_class":"com.database.szte.data.Station"}

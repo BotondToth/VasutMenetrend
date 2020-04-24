@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CityDTO {
+public class StationDTO {
     public int postCode;
     public String name;
-    public String station;
+    public String city;
 }
