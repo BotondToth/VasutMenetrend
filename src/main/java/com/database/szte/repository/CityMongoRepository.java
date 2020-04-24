@@ -1,9 +1,9 @@
 package com.database.szte.repository;
 
-import com.database.szte.data.Train;
+import com.database.szte.data.City;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TrainMongoRepository extends MongoRepository<Train, String> {
+public interface CityMongoRepository extends MongoRepository<City, String> {
 }
