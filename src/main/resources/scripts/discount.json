@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5ea57499da8ef979b65f3a3c"},"title":"Teljesárú menetdíj (100%)","percentage":{"$numberInt":"100"},"_class":"com.database.szte.data.Discount"}
+{"_id":{"$oid":"5ea574d1da8ef979b65f3a3d"},"title":"26 éven aluli fiatal (33%)","percentage":{"$numberInt":"33"},"_class":"com.database.szte.data.Discount"}
+{"_id":{"$oid":"5ea57514da8ef979b65f3a3e"},"title":"Gyermek 6-14 éves korig (50%)","percentage":{"$numberInt":"50"},"_class":"com.database.szte.data.Discount"}
+{"_id":{"$oid":"5ea5752bda8ef979b65f3a3f"},"title":"Diák (50%)","percentage":{"$numberInt":"50"},"_class":"com.database.szte.data.Discount"}
+{"_id":{"$oid":"5ea57552da8ef979b65f3a40"},"title":"Fogyatékossággal élő személy (90%)","percentage":{"$numberInt":"90"},"_class":"com.database.szte.data.Discount"}
