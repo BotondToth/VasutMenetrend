@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class TrainController {
+public class TrainController extends BaseController {
     //swagger: localhost:8080/swagger-ui.html
     @Autowired
     private ITrainService trainService;

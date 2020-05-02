@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class ReportController {
+public class ReportController extends BaseController {
 
     @Autowired
     private IReportService reportService;
