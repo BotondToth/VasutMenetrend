@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class StationController {
+public class StationController extends BaseController {
 
     @Autowired
     private IStationService stationService;
