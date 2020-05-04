@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5eaf0805b12f6d155c326430"},"username":"admin2","password":"$2a$10$w/VzrxXk3RTjMDS9AzW8LuUTa0odhT8rhWtvlUVOhLsem0tLu7dmS","email":"test2@test.com","_class":"com.database.szte.data.ApplicationUser"}
+{"_id":{"$oid":"5eaf0812b12f6d155c326431"},"username":"admin1","password":"$2a$10$QgZHN3Duc.caU2aQgpJfbeRlnP3mDO4778ms2Wj7Bp5YQUQKzc2VW","email":"test1@test.com","_class":"com.database.szte.data.ApplicationUser"}
+{"_id":{"$oid":"5eaf0d8d1c346f24b89d8942"},"username":"admin3","password":"$2a$10$oDpYmVcXJ8J/3Qiqp5s4a.VwUJBi5RCseU9HoE53l4.ySoLMvil8C","email":"test3@test.com","_class":"com.database.szte.data.ApplicationUser"}
