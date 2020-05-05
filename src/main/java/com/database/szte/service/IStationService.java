@@ -8,4 +8,8 @@ public interface IStationService {
     List<Station> getAllStations();
 
     Station saveNewStation(Station stationToSave);
+
+    List<Station> findByRegexName(String name);
+
+    List<Station> findByRegexCity(String city);
 }
