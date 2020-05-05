@@ -28,6 +28,5 @@ public class ApplicationUser {
     public ApplicationUser(UserDTO userDTO) {
         this.username = userDTO.getUsername();
         this.password = userDTO.getPassword();
-        this.email = userDTO.getEmail();
     }
 }
