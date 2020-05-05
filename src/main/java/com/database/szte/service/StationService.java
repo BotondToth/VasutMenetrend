@@ -22,4 +22,14 @@ public class StationService implements IStationService {
     public Station saveNewStation(final Station stationToSave) {
         return stationMongoRepository.save(stationToSave);
     }
+
+    @Override
+    public List<Station> findByRegexName(final String name) {
+        return stationMongoRepository.findByRegexName(name);
+    }
+
+    @Override
+    public List<Station> findByRegexCity(final String city) {
+        return stationMongoRepository.findByRegexCity(city);
+    }
 }

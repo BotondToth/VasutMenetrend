@@ -1,0 +1,123 @@
+[{
+  "_id": {
+    "$oid": "5ea732d396d3e23afe678dea"
+  },
+  "start": {
+    "$ref": "Stations",
+    "$id": {
+      "$oid": "5ea2f71c8a9dee47416f1da6"
+    }
+  },
+  "end": {
+    "$ref": "Stations",
+    "$id": {
+      "$oid": "5ea2f7748a9dee47416f1da8"
+    }
+  },
+  "stops": [
+    {
+      "$ref": "Stations",
+      "$id": {
+        "$oid": "5ea2f69a8a9dee47416f1da5"
+      }
+    }
+  ],
+  "train": {
+    "$ref": "Trains",
+    "$id": {
+      "$oid": "5e95e39789a3542554adca55"
+    }
+  },
+  "ticket": {
+    "$ref": "Tickets",
+    "$id": {
+      "$oid": "5ea46bf44b5e5039a13e8e29"
+    }
+  },
+  "date": {
+    "$date": "2020-04-27T16:57:05.974Z"
+  },
+  "duration": 120,
+  "_class": "com.database.szte.data.Timetable"
+},{
+  "_id": {
+    "$oid": "5eb1cc2fcf15a62b669ba01e"
+  },
+  "start": {
+    "$ref": "Stations",
+    "$id": {
+      "$oid": "5ea2f7408a9dee47416f1da7"
+    }
+  },
+  "end": {
+    "$ref": "Stations",
+    "$id": {
+      "$oid": "5ea2f79c8a9dee47416f1da9"
+    }
+  },
+  "stops": [
+    {
+      "$ref": "Stations",
+      "$id": {
+        "$oid": "5ea2f69a8a9dee47416f1da5"
+      }
+    },
+    {
+      "$ref": "Stations",
+      "$id": {
+        "$oid": "5ea2f7748a9dee47416f1da8"
+      }
+    }
+  ],
+  "train": {
+    "$ref": "Trains",
+    "$id": {
+      "$oid": "5e95e39789a3542554adca56"
+    }
+  },
+  "ticket": {
+    "$ref": "Tickets",
+    "$id": {
+      "$oid": "5ea46c024b5e5039a13e8e2a"
+    }
+  },
+  "date": {
+    "$date": "2020-04-28T16:57:05.974Z"
+  },
+  "duration": 140,
+  "_class": "com.database.szte.data.Timetable"
+},{
+  "_id": {
+    "$oid": "5eb1cec1cf15a62b669ba01f"
+  },
+  "start": {
+    "$ref": "Stations",
+    "$id": {
+      "$oid": "5ea2f7748a9dee47416f1da8"
+    }
+  },
+  "end": {
+    "$ref": "Stations",
+    "$id": {
+      "$oid": "5ea2f79c8a9dee47416f1da9"
+    }
+  },
+  "stops": [],
+  "train": {
+    "$ref": "Trains",
+    "$id": {
+      "$oid": "5e95e39789a3542554adca57"
+    }
+  },
+  "ticket": {
+    "$ref": "Tickets",
+    "$id": {
+      "$oid": "5ea46b714b5e5039a13e8e26"
+    }
+  },
+  "date": {
+    "$date": "2020-04-30T16:57:05.974Z"
+  },
+  "duration": 20,
+  "_class": "com.database.szte.data.Timetable"
+}]
