@@ -37,6 +37,10 @@ public class UserService implements UserDetailsService {
         return new User(user.getUsername(), user.getPassword(), new ArrayList<>());
     }
 
+    public ApplicationUser findUserByUserName(String username) {
+        return userMongoRepository.findApplicationUserByUsername(username);
+    }
+
     ApplicationUser findUserById(final String userId) {
         return userMongoRepository.findApplicationUserById(new ObjectId(userId));
     }

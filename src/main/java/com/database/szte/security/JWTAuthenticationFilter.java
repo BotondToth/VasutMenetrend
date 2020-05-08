@@ -2,6 +2,7 @@ package com.database.szte.security;
 
 import com.auth0.jwt.JWT;
 import com.database.szte.data.ApplicationUser;
+import com.database.szte.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -25,10 +26,12 @@ import static com.database.szte.security.SecurityConstants.*;
  * This class handles the /login path
  */
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
+    private UserService userService;
     private AuthenticationManager authenticationManager;
 
-    public JWTAuthenticationFilter(AuthenticationManager authenticationManager) {
+    public JWTAuthenticationFilter(AuthenticationManager authenticationManager, UserService userService) {
         this.authenticationManager = authenticationManager;
+        this.userService = userService;
     }
 
     @Override
@@ -54,12 +57,17 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
                                             HttpServletResponse res,
                                             FilterChain chain,
                                             Authentication auth) throws IOException, ServletException {
+
+        String uname = ((User) auth.getPrincipal()).getUsername();
+        ApplicationUser appUser = this.userService.findUserByUserName(uname);
+
         String token = JWT.create()
                 .withSubject(((User) auth.getPrincipal()).getUsername())
                 .withExpiresAt(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .sign(HMAC512(SECRET.getBytes()));
         res.addHeader(HEADER_STRING, TOKEN_PREFIX + token);
-        res.addHeader("Access-Control-Expose-Headers", "Authorization");
+        res.addHeader("UID", appUser.getId().toString());
+        res.addHeader("Access-Control-Expose-Headers", "Authorization, UID");
     }
 
     @Override
