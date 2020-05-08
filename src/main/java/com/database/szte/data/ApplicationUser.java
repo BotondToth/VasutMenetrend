@@ -24,9 +24,12 @@ public class ApplicationUser {
     private String username;
     private String password;
     private String email;
+    private String name;
 
     public ApplicationUser(UserDTO userDTO) {
         this.username = userDTO.getUsername();
         this.password = userDTO.getPassword();
+        this.name = userDTO.getName();
+        this.email = userDTO.getEmail();
     }
 }
