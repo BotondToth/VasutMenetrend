@@ -11,5 +11,5 @@ public interface ITimetableService {
 
     Timetable saveNewTimetable(Timetable timetableToSave);
 
-    List<Timetable> getTimetableByParams(String start, String end, Instant date);
+    List<Timetable> getTimetableByParams(String start, String end, Instant date, List<String> stops);
 }

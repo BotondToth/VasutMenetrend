@@ -26,7 +26,9 @@ public class TimetableController extends BaseController {
     }
 
     @GetMapping("/timetables/search")
-    public List<Timetable> getTimetableByParams(@RequestParam final String to, @RequestParam final String from, @RequestParam final Instant when) {
-        return timetableService.getTimetableByParams(from, to, when);
+    public List<Timetable> getTimetableByParams(@RequestParam final String to, @RequestParam final String from,
+                                                @RequestParam final Instant when,
+                                                @RequestParam(required = false) final List<String> stops) {
+        return timetableService.getTimetableByParams(from, to, when, stops);
     }
 }
