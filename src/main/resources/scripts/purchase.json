@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "5eb4527a95513b2df6ecfe87"
+  },
+  "user": {
+    "$ref": "Users",
+    "$id": {
+      "$oid": "5eaf0805b12f6d155c326430"
+    }
+  },
+  "timetable": {
+    "$ref": "Timetables",
+    "$id": {
+      "$oid": "5ea732d396d3e23afe678dea"
+    }
+  },
+  "quantity": 5,
+  "date": {
+    "$date": "2020-05-08T18:22:24.705Z"
+  },
+  "discount": 90,
+  "_class": "com.database.szte.data.Purchase"
+},{
+  "_id": {
+    "$oid": "5eb51c588b25d563e31f25fa"
+  },
+  "user": {
+    "$ref": "Users",
+    "$id": {
+      "$oid": "5eaf0805b12f6d155c326430"
+    }
+  },
+  "timetable": {
+    "$ref": "Timetables",
+    "$id": {
+      "$oid": "5eb1cec1cf15a62b669ba01f"
+    }
+  },
+  "quantity": 2,
+  "date": {
+    "$date": "2020-05-08T08:42:21.336Z"
+  },
+  "discount": 100,
+  "_class": "com.database.szte.data.Purchase"
+}]

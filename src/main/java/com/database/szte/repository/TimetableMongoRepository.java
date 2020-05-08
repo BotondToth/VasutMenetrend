@@ -13,4 +13,5 @@ public interface TimetableMongoRepository extends MongoRepository<Timetable, Str
 
     List<Timetable> findByStartInAndEndInAndDate(List<Station> start, List<Station> end, Instant date);
 
+    Timetable findTimetableById(String timetableId);
 }
