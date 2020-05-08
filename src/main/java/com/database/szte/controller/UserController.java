@@ -1,7 +1,5 @@
 package com.database.szte.controller;
 
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.algorithms.Algorithm;
 import com.database.szte.data.ApplicationUser;
 import com.database.szte.dto.UserDTO;
 import com.database.szte.security.WebSecurity;
