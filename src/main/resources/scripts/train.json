@@ -1,15 +1,15 @@
-{"_id":{"$oid":"5e95e39789a3542554adca55"},"trainNum":"sz-001","limit":{"$numberInt":"50"}}
-{"_id":{"$oid":"5e95e39789a3542554adca56"},"trainNum":"sz-002","limit":{"$numberInt":"30"}}
-{"_id":{"$oid":"5e95e39789a3542554adca57"},"trainNum":"sz-003","limit":{"$numberInt":"10"}}
-{"_id":{"$oid":"5e95e39789a3542554adca58"},"trainNum":"sz-004","limit":{"$numberInt":"50"}}
-{"_id":{"$oid":"5e95e39789a3542554adca59"},"trainNum":"sz-005","limit":{"$numberInt":"20"}}
-{"_id":{"$oid":"5e95e39789a3542554adca5a"},"trainNum":"sz-006","limit":{"$numberInt":"35"}}
-{"_id":{"$oid":"5e95e39789a3542554adca5b"},"trainNum":"sz-007","limit":{"$numberInt":"38"}}
-{"_id":{"$oid":"5e95e39789a3542554adca5c"},"trainNum":"sz-008","limit":{"$numberInt":"15"}}
-{"_id":{"$oid":"5e95e39789a3542554adca5d"},"trainNum":"sz-009","limit":{"$numberInt":"20"}}
-{"_id":{"$oid":"5e95e39789a3542554adca5e"},"trainNum":"sz-010","limit":{"$numberInt":"30"}}
-{"_id":{"$oid":"5e95e39789a3542554adca5f"},"trainNum":"sz-011","limit":{"$numberInt":"30"}}
-{"_id":{"$oid":"5e95e39789a3542554adca60"},"trainNum":"sz-012","limit":{"$numberInt":"20"}}
-{"_id":{"$oid":"5e95e39789a3542554adca61"},"trainNum":"sz-013","limit":{"$numberInt":"15"}}
-{"_id":{"$oid":"5e95e39789a3542554adca62"},"trainNum":"sz-014","limit":{"$numberInt":"45"}}
-{"_id":{"$oid":"5e95e39789a3542554adca63"},"trainNum":"sz-015","limit":{"$numberInt":"32"}}
+{"_id":{"$oid":"5e95e39789a3542554adca55"},"trainNum":"sz-001","limit":{"$numberInt":"50"},"flags": {"$numberInt":"7"}}
+{"_id":{"$oid":"5e95e39789a3542554adca56"},"trainNum":"sz-002","limit":{"$numberInt":"30"},"flags": {"$numberInt":"3"}}
+{"_id":{"$oid":"5e95e39789a3542554adca57"},"trainNum":"sz-003","limit":{"$numberInt":"10"},"flags": {"$numberInt":"3"}}
+{"_id":{"$oid":"5e95e39789a3542554adca58"},"trainNum":"sz-004","limit":{"$numberInt":"50"},"flags": {"$numberInt":"3"}}
+{"_id":{"$oid":"5e95e39789a3542554adca59"},"trainNum":"sz-005","limit":{"$numberInt":"20"},"flags": {"$numberInt":"3"}}
+{"_id":{"$oid":"5e95e39789a3542554adca5a"},"trainNum":"sz-006","limit":{"$numberInt":"35"},"flags": {"$numberInt":"3"}}
+{"_id":{"$oid":"5e95e39789a3542554adca5b"},"trainNum":"sz-007","limit":{"$numberInt":"38"},"flags": {"$numberInt":"6"}}
+{"_id":{"$oid":"5e95e39789a3542554adca5c"},"trainNum":"sz-008","limit":{"$numberInt":"15"},"flags": {"$numberInt":"6"}}
+{"_id":{"$oid":"5e95e39789a3542554adca5d"},"trainNum":"sz-009","limit":{"$numberInt":"20"},"flags": {"$numberInt":"6"}}
+{"_id":{"$oid":"5e95e39789a3542554adca5e"},"trainNum":"sz-010","limit":{"$numberInt":"30"},"flags": {"$numberInt":"6"}}
+{"_id":{"$oid":"5e95e39789a3542554adca5f"},"trainNum":"sz-011","limit":{"$numberInt":"30"},"flags": {"$numberInt":"7"}}
+{"_id":{"$oid":"5e95e39789a3542554adca60"},"trainNum":"sz-012","limit":{"$numberInt":"20"},"flags": {"$numberInt":"7"}}
+{"_id":{"$oid":"5e95e39789a3542554adca61"},"trainNum":"sz-013","limit":{"$numberInt":"15"},"flags": {"$numberInt":"7"}}
+{"_id":{"$oid":"5e95e39789a3542554adca62"},"trainNum":"sz-014","limit":{"$numberInt":"45"},"flags": {"$numberInt":"7"}}
+{"_id":{"$oid":"5e95e39789a3542554adca63"},"trainNum":"sz-015","limit":{"$numberInt":"32"},"flags": {"$numberInt":"7"}}

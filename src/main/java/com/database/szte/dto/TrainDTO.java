@@ -7,4 +7,5 @@ import lombok.Getter;
 public class TrainDTO {
     public String trainNum;
     public int limit;
+    public int flags; //b XYZ: X: bicigli tároló, Y: másodosztály, Z: elsőosztály
 }
