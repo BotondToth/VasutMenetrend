@@ -15,9 +15,11 @@ public class Train {
     private String id;
     private String trainNum;
     private int limit;
+    private int flags;
 
     public Train(TrainDTO dto) {
         this.limit = dto.limit;
         this.trainNum = dto.trainNum;
+        this.flags = dto.flags;
     }
 }
