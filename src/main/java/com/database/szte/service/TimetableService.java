@@ -7,7 +7,12 @@ import org.apache.commons.collections4.ListUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.Duration;
 import java.time.Instant;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -37,6 +42,9 @@ public class TimetableService implements ITimetableService {
             return getTimetables(start, end, date);
         } else {
             final var stopsList = getStopStations(stops);
+            if (stopsList.size() != stops.size()) {
+                return new ArrayList<>();
+            }
             return getTimetables(start, end, date).stream()
                     .filter(timetable -> filterStops(timetable, stopsList))
                     .collect(Collectors.toList());
@@ -48,7 +56,25 @@ public class TimetableService implements ITimetableService {
     }
 
     private List<Timetable> getTimetables(final String start, final String end, final Instant date) {
-        return timetableMongoRepository.findByStartInAndEndInAndDate(getStations(start), getStations(end), date);
+        //return timetableMongoRepository.findByStartInAndEndInAndDate(getStations(start), getStations(end), date);
+
+        List<Station> starts = getStations(start);
+        List<Station> ends = getStations(end);
+        List<Timetable> list = timetableMongoRepository.findByStartInAndEndIn(starts, ends);
+
+        List<Timetable> result = new ArrayList<>();
+
+        for (Timetable t : list) {
+            Instant time = t.getDate();
+
+            Duration between = Duration.between(date, time);
+            long secs = between.abs().getSeconds();
+            if (secs <= 24*60*60){
+                result.add(t);
+            }
+        }
+
+        return result;
     }
 
     private List<Station> getStations(final String text) {

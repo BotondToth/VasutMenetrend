@@ -11,7 +11,8 @@ import java.util.List;
 @Repository
 public interface TimetableMongoRepository extends MongoRepository<Timetable, String> {
 
-    List<Timetable> findByStartInAndEndInAndDate(List<Station> start, List<Station> end, Instant date);
+    //List<Timetable> findByStartInAndEndInAndDate(List<Station> start, List<Station> end, Instant date);
+    List<Timetable> findByStartInAndEndIn(List<Station> start, List<Station> end);
 
     Timetable findTimetableById(String timetableId);
 }

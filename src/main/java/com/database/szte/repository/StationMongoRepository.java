@@ -10,9 +10,9 @@ import java.util.List;
 @Repository
 public interface StationMongoRepository extends MongoRepository<Station, String> {
 
-    @Query("{ 'city' : { $regex: ?0 } }")
+    @Query("{ 'city' : { $regex: ?0, '$options' : 'i' } }")
     List<Station> findByRegexCity(String city);
 
-    @Query("{ 'name' : { $regex: ?0 } }")
+    @Query("{ 'name' : { $regex: ?0, '$options' : 'i' } }")
     List<Station> findByRegexName(String name);
 }
